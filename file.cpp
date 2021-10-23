@@ -13,7 +13,12 @@ void file::getAllWord()
     }
     string word;
     while(f>>word)
+    {
+        if(!isalpha(word.back())&&!isdigit(word.back()))
+            word.pop_back();
         allWord.push_back(word);
+
+    }
     f.close();
 }
 
