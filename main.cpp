@@ -10,9 +10,9 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    if(argc<2)
+    if(argc<2||argc>3)
     {
-        cout<<"Not enough arguments";
+        cout<<"Not valid arguments";
         return -1;
     }
     if(argc==2)
